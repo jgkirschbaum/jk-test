@@ -8,7 +8,7 @@ ENV GROUP jktest
 ENV GID 1001
 ENV HOME /home/$USER
 
-RUN addgroup -g $GID -S $GROUP && adduser -u $UID -S $USER -G $GROUP -U $GROUP -s /bin/bash
+RUN addgroup -g $GID -S $GROUP && adduser -u $UID -G $GROUP -h $HOME -s /bin/bash $USER 
 
 COPY src/* $HOME/bin/
 RUN chown -R $USER:$GROUP $HOME && chmod 555 $HOME/bin/*
