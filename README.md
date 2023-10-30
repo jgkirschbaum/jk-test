@@ -2,7 +2,7 @@
 
 [![Docker Hub](https://img.shields.io/badge/Docker-Hub-blue.svg)](https://hub.docker.com/r/jgkirschbaum/jk-test)
 [![Kubernetes YAML manifests](https://img.shields.io/badge/Kubernetes-manifests-blue.svg)](https://github.com/jgkirschbaum/jk-test/tree/main/kubernetes)
-[![Helm chart](https://img.shields.io/badge/Helm-Chart-informational?style=flat-square)](https://github.com/jgkirschbaum/jk-test/tree/main/chart/jk-test)
+[![Helm chart](https://img.shields.io/badge/Helm-Chart-informational?style=flat-square)](https://github.com/jgkirschbaum/jk-test/tree/main/charts/jk-test)
 [![codebeat badge](https://codebeat.co/badges/fefb2c70-878f-4f34-bbb7-cfbc8071bb03)](https://codebeat.co/projects/github-com-jgkirschbaum-jk-test-main)
 [![release](https://img.shields.io/github/v/release/jgkirschbaum/jk-test.svg)](https://github.com/jgkirschbaum/jk-test/releases)
 [![license](https://img.shields.io/badge/license-GPLv3-green)](https://github.com/jgkirschbaum/jk-test/blob/main/LICENSE)
