@@ -1,0 +1,51 @@
+image:
+  # -- Location of the image
+  repository: "jgkirschbaum/jk-test"
+  # -- When should the image be pulled
+  pullPolicy: "IfNotPresent"
+  # -- Version of the image
+  tag: "1.0.0"
+
+# -- Optional if you pull the image from a private registry
+imagePullSecrets: []
+# -- Replaces the name of the chart in the `Chart.yaml`
+nameOverride: ""
+# -- Completely replace the generated name everywhere
+fullnameOverride: ""
+
+# How many pods should run
+replicaCount: 1
+
+serviceAccount:
+  # -- Specifies whether a service account should be created
+  create: true
+  # -- Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+# -- Additional annotations
+podAnnotations: {}
+
+# -- Special values for the security context of the pod
+podSecurityContext:
+  fsGroup: 1001
+
+# -- Special values for the security context of the container
+securityContext:
+  capabilities:
+    drop:
+      - ALL
+  allowPrivilegeEscalation: false
+  runAsNonRoot: true
+  runAsUser: 1001
+  runAsGroup: 1001
+
+# -- Specify the resources the pod needs to run in the cluster and also set an upper limit but not for cpu
+resources:
+  requests:
+    cpu: "10m"
+    memory: "32Mi"
+  limits:
+    memory: "32Mi"
