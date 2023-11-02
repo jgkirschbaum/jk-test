@@ -2,6 +2,20 @@ apiVersion: v1
 entries:
   jk-test:
   - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2023-11-02T12:46:12.688874984Z"
+    description: A Helm chart using image jgkirschbaum/jk-test for testing
+    digest: 5c3cad593efd342c7a930133e7f65ac996ebbca3a3ddf4909649882b1bc01adb
+    home: https://github.com/jgkirschbaum/jk-test
+    icon: https://img.shields.io/badge/Chart-jk--test-informational?style=flat-square
+    name: jk-test
+    sources:
+    - https://github.com/jgkirschbaum/jk-test/chart/jk-test
+    type: application
+    urls:
+    - https://github.com/jgkirschbaum/jk-test/releases/download/jk-test-0.1.2/jk-test-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 1.0.0
     created: "2023-11-02T11:03:59.765759279Z"
     description: A Helm chart using image jgkirschbaum/jk-test for testing
@@ -29,4 +43,4 @@ entries:
     urls:
     - https://github.com/jgkirschbaum/jk-test/releases/download/jk-test-0.1.0/jk-test-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-02T11:03:59.76577066Z"
+generated: "2023-11-02T12:46:12.688891816Z"
