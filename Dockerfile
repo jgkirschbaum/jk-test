@@ -1,6 +1,6 @@
 FROM alpine:3
 
-RUN apk --update --no-cache add bash~="5" && rm -rf /var/cache/apk/*
+RUN apk --update --no-cache add bash~="5" python3~="3" && rm -rf /var/cache/apk/*
 
 ENV USER jktest
 ENV UID 1001
