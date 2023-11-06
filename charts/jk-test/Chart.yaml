@@ -2,8 +2,8 @@ apiVersion: v2
 name: jk-test
 description: A Helm chart using image docker.io/jgkirschbaum/jk-test for testing
 type: application
-version: 0.1.4
-appVersion: 1.0.2
+version: 1.0.0
+appVersion: 1.0.3
 icon: "https://img.shields.io/badge/Chart-jk--test-informational?style=flat-square"
 home: "https://github.com/jgkirschbaum/jk-test"
 sources:
