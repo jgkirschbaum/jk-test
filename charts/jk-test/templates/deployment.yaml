@@ -5,9 +5,7 @@ metadata:
   labels:
     {{- include "jk-test.labels" . | nindent 4 }}
 spec:
-  {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
-  {{- end }}
   selector:
     matchLabels:
       {{- include "jk-test.selectorLabels" . | nindent 6 }}

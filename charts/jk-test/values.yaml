@@ -4,7 +4,7 @@ image:
   # -- When should the image be pulled
   pullPolicy: "IfNotPresent"
   # -- Version of the image
-  tag: "1.0.0"
+  tag: ""
 
 # -- Optional if you pull the image from a private registry
 imagePullSecrets: []
