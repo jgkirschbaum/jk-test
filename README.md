@@ -7,7 +7,7 @@ Use it like any other Helm Chart.
 Once Helm is locally installed, add the repo as follows:
 
 ```bash
-helm repo add jgkirschbaum https://jgkirschbaum.github.io/helm-charts
+helm repo add jk-test https://jgkirschbaum.github.io/jk-test
 ```
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
