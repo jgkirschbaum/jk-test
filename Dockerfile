@@ -17,4 +17,4 @@ RUN chown -R $USER:$GROUP $HOME && chmod 555 $HOME/bin/*
 USER $UID:$GID
 WORKDIR $HOME
 
-CMD ["sleep", "infinity"]
+CMD ["bin/jktest.py"]
