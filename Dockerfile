@@ -19,4 +19,4 @@ RUN chown -R $USER:$GROUP $HOME && chmod 555 $HOME/bin/*
 USER $UID:$GID
 WORKDIR $HOME
 
-CMD ["bin/jktest.py"]
+CMD ["python3", "-u", "$HOME/bin/jktest.py"]
