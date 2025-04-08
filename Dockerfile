@@ -10,7 +10,8 @@ ENV GROUP jktest
 ENV GID 1001
 ENV HOME /home/$USER
 
-RUN addgroup -g $GID -S $GROUP && adduser -u $UID -S -G $GROUP -h $HOME -s /bin/bash $USER
+RUN apk --update --no-cache upgrade && \
+    addgroup -g $GID -S $GROUP && adduser -u $UID -S -G $GROUP -h $HOME -s /bin/bash $USER
 
 COPY src/* $HOME/bin/
 RUN chown -R $USER:$GROUP $HOME && chmod 555 $HOME/bin/*
