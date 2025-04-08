@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 160
+target-version = ['py313']
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+pythonpath = [
+  ".",
+  "src",
+]

@@ -1,4 +1,10 @@
-src/__pycache__
+# Test Handling
+test*
+!tests/
+!tests/**
+
+# Ignore List
+__pycache__
 .vscode
 deploy.sh
 pullsecret.yaml
