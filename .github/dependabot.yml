@@ -1,8 +1,19 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-updates: []
-#   - package-ecosystem: "pip" # See documentation for possible values
-#     directory: "/src" # Location of package manifests
-#     schedule:
-#       interval: "weekly"
+updates:
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/src" # Location of package manifests
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+  - package-ecosystem: "docker"
+    directory: "/" # Location of Dockerfile
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+  - package-ecosystem: "github-actions"
+    directory: "/" # You don't need to specify `/.github/workflows` for `directory`. You can use `directory: "/"`.
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
