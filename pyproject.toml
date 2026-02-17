@@ -1,6 +1,6 @@
 [tool.black]
 line-length = 160
-target-version = ['py313']
+target-version = ['py314']
 
 [tool.pytest.ini_options]
 testpaths = [
